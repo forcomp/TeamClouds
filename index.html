@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sidenav"> 
+ <a href="#" class="tablinks" onclick="openCity(event, 'About')" id="defaultOpen">About us</a>
+  <a href="#" class="tablinks" onclick="openCity(event, 'Stream')">Upcoming Stream</a>
+</div>
+
+ <div id="About" class="tabcontent">
+  <center><h1><team>Team Cloud</team></h1></center>
+  <p>Our group tackles the research of finding the effects of classical music
+  to the academic performance of APEC junior high school students.</p>
+  <center><tile>Meet the team</tile></center>
+  <div class="container">
+  <a href="https://www.youtube.com/@TeamCloud-jb6xw" target="_blank">
+  <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)
+  "src="untitled.png">
+  <div class="pop">Visit our Channel</div>
+  </div>
+  </a>
+ </div>
+
+ <div id="Stream" class="tabcontent">
+  <h3><center><join>Join us!</join></center></h3>
+  <p>Join us on our first stream at our youtube<br>channel, where we interview
+  people and ask<br>questions on how classical music affects<br>their academic
+  performance<video controls><source src="intro.mp4" type="video/mp4">
+  </video></p>
+  <div id="effects"></div>
+  <div id="listen"></div>
+ </div>
+ 
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<script>
+function bigImg(x) {
+  document.body.style.backgroundColor = "#B8B18F";
+  document.img.style.opacity= "0.5";
+}
+
+function normalImg(x) {
+  document.body.style.backgroundColor = "#EAE2B7";
+  document.img.style.opacity= "1";
+}
+</script>
+
+</body>
+</html>

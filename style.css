@@ -1,0 +1,161 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #EAE2B7;
+  margin: 0px;
+  transition: background-color .5s;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#About {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px;
+  color: white;
+}
+
+h1 {
+  margin: 0px;
+}
+
+team {
+  background-color: #003049;
+  padding: 70px;
+  display: block;
+}
+
+#About p {
+  background-color: #F77F00;
+  padding: 20px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+#Stream {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px;
+  color: white;
+}
+
+join {
+  background-color: #003049;
+  padding: 50px;
+  display: inline-block;
+  width: 50vh;
+  font-size: 28px;
+}
+
+#Stream p {
+  background-color: #F77F00;
+  margin: 0px;
+  padding: 100px 50px;
+  font-weight: bold;
+  height: auto;
+}
+
+video {
+  position: absolute;
+  max-width: 480px;
+  right: 10vh;
+  top: 29vh;
+}
+
+#effects {
+  width: 100%;
+  height: 80vh;
+  background-image: url("effects3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#listen {
+  width: 100%;
+  height: 80vh;
+  background-image: url("listen2.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-style: none none solid none;
+  border-width: 30px;
+  border-color: #111;
+}
+
+#About tile {
+  background-color: #D62828;
+  padding: 20px;
+  display: block;
+  margin-bottom: 20px;
+  font-family: squeaky chalk sound;
+}
+
+.pop {
+  display: none;
+  padding: 20px;
+  font-weight: bold;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+#About img:hover + .pop {
+  display: inline;
+  color: red;
+  text-decoration: none;
+  text-decoration-color: white;
+  transition: 0.4s;
+}
+
+.container {
+  position: relative;
+}
+
+#About img:hover {
+  opacity: 0.3;
+}
+
+#About img {
+  width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  transition: .5s ease;
+}
+
+@font-face {
+  font-family: squeaky chalk sound;
+  src: url(SqueakyChalkSound.ttf);
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
